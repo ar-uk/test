@@ -68,12 +68,12 @@ public class UserController {
             @RequestParam int page,
             @RequestParam int size)
     {
-        List<User> filteredusers = map.values().stream()
+        List<User> filteredUsers = map.values().stream()
                 .filter(user -> name == null || user.getName().equalsIgnoreCase(name))
                 .skip(page * size)
                 .limit(size)
                 .collect(Collectors.toList());
 
-        return filteredusers;
+        return filteredUsers;
     }
 }

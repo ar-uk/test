@@ -1,4 +1,4 @@
-package kz.adil.student;
+package kz.adil.student.lab2;
 
 class User{
     public long getId() {

@@ -1,9 +1,7 @@
-package kz.adil.student;
+package kz.adil.student.lab2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
 
 
 @SpringBootApplication

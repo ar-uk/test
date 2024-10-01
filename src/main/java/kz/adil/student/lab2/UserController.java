@@ -1,6 +1,5 @@
-package kz.adil.student;
+package kz.adil.student.lab2;
 
-import kz.adil.student.User;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.*;
 import java.util.List;

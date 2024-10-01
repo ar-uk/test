@@ -1,4 +1,4 @@
-package kz.adil.student;
+package kz.adil.student.lab2;
 
 public class Book{
 	private String title;

@@ -1,4 +1,4 @@
-package kz.adil.student;
+package kz.adil.student.lab2;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

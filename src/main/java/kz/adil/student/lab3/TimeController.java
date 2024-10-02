@@ -4,16 +4,18 @@ package kz.adil.student.lab3;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+
 @RestController
 class Lab3 {
     @GetMapping("/currentTime")
     public String ShowTime(){
         return LocalDateTime.now().toString();
     }
+
 
     @GetMapping("/api")
     public List<Integer> ShowNumbers(@RequestParam(value = "q") int q){
@@ -50,10 +52,9 @@ class Lab3 {
     public String Guessr(@RequestParam(value = "num") int num){
         if(num ==number)
             return "Grats";
-        else if (num>number){
-            return "aim lower mate";
-        }
+        else if (num>number)
+            return "aim lower";
         else
-        return "little too low maybe";
+        return "too low";
     }
 }

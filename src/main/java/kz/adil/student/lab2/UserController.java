@@ -25,7 +25,7 @@ public class UserController {
         User user = map.get(id);
 
         if (user == null) {
-            return "not foud";
+            return "not found";
         }
         user.setName(newuser.getName());
         user.setAge(newuser.getAge());
